@@ -26,6 +26,7 @@ main {
 .expense-table {
   width: 100%;
   border-collapse: collapse;
+  align-self: start;
 }
 
 .expense-table select {
@@ -102,7 +103,7 @@ main {
   background-color: white;
   border: 1px solid;
   position: absolute;
-  display: none;
+  /* display: none; */
   border-radius: 4px;
   overflow: hidden;
   box-shadow: 0 0 12px rgba(0, 0, 0, 0.3);

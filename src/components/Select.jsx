@@ -20,7 +20,7 @@ const Select = ({
 
         {options.map((option, idx) => {
           return (
-            <option key={idx} value={option.toLowerCase()}>
+            <option key={idx} value={option}>
               {option}
             </option>
           );

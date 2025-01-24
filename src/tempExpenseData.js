@@ -21,7 +21,7 @@ export default [
   {
     id: crypto.randomUUID(),
     title: "Electricity Bill",
-    category: "Bill",
+    category: "Bills",
     amount: 40,
   },
 ];
