@@ -3,6 +3,7 @@ import "./app.css";
 import ExpenseForm from "./components/ExpenseForm";
 import ExpenseTable from "./components/ExpenseTable";
 import tempExpenseData from "./tempExpenseData";
+import { useLocaleStorage } from "./hooks/useLocaleStorage";
 
 const App = () => {
   const [expense, setExpense] = useState({
@@ -10,9 +11,11 @@ const App = () => {
     category: "",
     amount: "",
   });
-  const [expenses, setExpenses] = useState(tempExpenseData);
+  // useState ke jagah useLocaleStorage
+  const [expenses, setExpenses] = useLocaleStorage("expenses", tempExpenseData);
 
   const [editingRowId, setEditingRowId] = useState("");
+
   return (
     <main>
       <h1>Track Your Expense</h1>
